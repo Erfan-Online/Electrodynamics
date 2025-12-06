@@ -143,4 +143,5 @@ $$dA = |\mathbf{r}_u \times \mathbf{r}_v| \, du \, dv.$$
 ####  Why Does This Work?
 Geometrically, a small rectangle in the $uv$-plane with sides $du$ and $dv$ **maps** to a small parallelogram on the surface with sides $\mathbf{r}_u \, du$ and $\mathbf{r}_v \, dv$. The area of this parallelogram is exactly $|\mathbf{r}_u \times \mathbf{r}_v| \, du \, dv$, from the definition of the cross product's magnitude. Summing these over the surface gives the total area or the integral.
 This method is universal for parameterizable surfaces (which covers most cases in vector calculus). If the surface is given implicitly (e.g., $f(x, y, z) = c$), you first need to choose a parameterization, as the implicit form doesn't directly give tangent vectors.
+
 The above is a lot of words, just try to imagine the infinitesimal surface element in your head, going from a cartesian surface (e.g. rectangle) to a curved surface. You'll see the connection.
