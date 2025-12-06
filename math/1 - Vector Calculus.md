@@ -138,7 +138,7 @@ $$\mathbf{r}_u \times \mathbf{r}_v.$$
 
 The magnitude of this cross product, $|\mathbf{r}_u \times \mathbf{r}_v|$, gives the area of the parallelogram formed by the tangent vectors corresponding to increments $du$ and $dv$. Thus, the scalar area element is:
 
-$$dA = |\mathbf{r}_u \times \mathbf{r}_v| \, du \, dv.$$
+$$dA = |\mathbf{r}_u \times \mathbf{r}_v| \hspace{0.5} du dv.$$
 
 ####  Why Does This Work?
 Geometrically, a small rectangle in the $uv$-plane with sides $du$ and $dv$ **maps** to a small parallelogram on the surface with sides $\mathbf{r}_u \, du$ and $\mathbf{r}_v \, dv$. The area of this parallelogram is exactly $|\mathbf{r}_u \times \mathbf{r}_v| \, du \, dv$, from the definition of the cross product's magnitude. Summing these over the surface gives the total area or the integral.
