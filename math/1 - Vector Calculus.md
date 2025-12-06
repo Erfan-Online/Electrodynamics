@@ -1,6 +1,6 @@
 ## Line Integrals
 Line integrals are typically defined over a vector field $\mathbf{F}(x, y, z) = (P, Q, R)$ along a curve $C$. The standard form of a line integral is:
-$$\int_C \mathbf{F} \cdot d\mathbf{r} = \int_C (P \, dx + Q \, dy + R \, dz),$$
+$$\int_C \mathbf{F} \cdot d\mathbf{r} = \int_C (P.dx + Q.dy + R.dz),$$
 where $\mathbf{r}(t) = (x(t), y(t), z(t))$ parameterizes the curve $C$, and $d\mathbf{r} = (dx, dy, dz)$ is the differential tangent vector along the curve.
 
 - Why a vector function? 
@@ -14,7 +14,7 @@ It’s worth noting that line integrals can also be defined over scalar function
 ## Surface Integrals
 
 Surface integrals over vector fields are typically of the form:
-$$\iint_S \mathbf{F} \cdot d\mathbf{A} = \iint_S \mathbf{F} \cdot \mathbf{n} \, dA,$$
+$$\iint_S \mathbf{F} \cdot d\mathbf{A} = \iint_S \mathbf{F} \cdot \mathbf{n} dA,$$
 where $\mathbf{F}$ is a vector field, $\mathbf{n}$ is the unit normal vector to the surface $S$, and $d\mathbf{A} = \mathbf{n} \, dA$ is the vector area element.
 
 - Why a vector function?
