@@ -14,7 +14,7 @@ It’s worth noting that line integrals can also be defined over scalar function
 ## Surface Integrals
 
 Surface integrals over vector fields are typically of the form:
-$$\iint_S \mathbf{F} \cdot d\mathbf{A} = \iint_S \mathbf{F} \cdot \mathbf{n} \times \dA,$$
+$$\iint_S \mathbf{F} \cdot d\mathbf{A} = \iint_S \mathbf{F} \cdot \mathbf{n} \times dA,$$
 where $\mathbf{F}$ is a vector field, $\mathbf{n}$ is the unit normal vector to the surface $S$, and $d\mathbf{A} = \mathbf{n} \, dA$ is the vector area element.
 
 - Why a vector function?
