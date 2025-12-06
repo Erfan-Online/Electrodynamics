@@ -59,9 +59,10 @@ The flux is $\Phi = \iint_S \mathbf{F} \cdot d\mathbf{A}$.
 The surface is given by $z = f(x, y) = 1 - x^2 - y^2$. To find the normal vector, think of it this way: we can parameterize the surface using $x$ and $y$ directly as $\mathbf{r}(x, y) = (x, \, y, \, f(x,y))$. The two tangent vectors are then $\mathbf{r}_x = (1, \, 0, \, \frac{\partial f}{\partial x})$ and $\mathbf{r}_y = (0, \, 1, \, \frac{\partial f}{\partial y})$. Their cross product gives a normal vector:
 $$\mathbf{r}_x \times \mathbf{r}_y = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 1 & 0 & \frac{\partial f}{\partial x} \\ 0 & 1 & \frac{\partial f}{\partial y} \end{vmatrix} = \left( -\frac{\partial f}{\partial x}, \, -\frac{\partial f}{\partial y}, \, 1 \right)$$
 This points "upward" (positive $z$-component). For our paraboloid, $\frac{\partial f}{\partial x} = -2x$ and $\frac{\partial f}{\partial y} = -2y$, so:
-$$\mathbf{N} = \left( -(-2x), \, -(-2y), \, 1 \right) = (2x, \, 2y, \, 1)$$
+$$\mathbf{N} = \left( -(-2x), \, -(-2y), \, 1 \right) = (2x, \, 2y, \, 1)$$ 
 
-So $d\mathbf{A} = (2x, \, 2y, \, 1) \, dx \, dy$.
+The vector area element is simply $d\mathbf{A} = \mathbf{N} \, dx \, dy$ — the cross product already encodes both the direction (normal) and the area scaling factor. So:
+$$d\mathbf{A} = (2x, \, 2y, \, 1) \, dx \, dy$$
 
 The dot product with $\mathbf{F} = (0, \, 0, \, z) = (0, \, 0, \, 1 - x^2 - y^2)$ is:
 $$\mathbf{F} \cdot d\mathbf{A} = (0)(2x) + (0)(2y) + (1 - x^2 - y^2)(1) = (1 - x^2 - y^2) \, dx \, dy$$
