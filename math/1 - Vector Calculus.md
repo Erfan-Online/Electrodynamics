@@ -2,8 +2,8 @@
 Line integrals are typically defined over a vector field $\mathbf{F}(x, y, z) = (P, Q, R)$ along a curve $C$. 
 
 
-The standard form of a line integral is: \
-$$\int_C \mathbf{F} \cdot d\mathbf{r} = \int_C (P \cdot dx + Q \cdot dy + R \cdot dz),$$ 
+The standard form of a line integral is:
+$$\int_C \mathbf{F} \cdot d\mathbf{r} = \int_C (P \cdot dx + Q \cdot dy + R \cdot dz)$$ 
 
 where 
 - $\mathbf{r}(t) = (x(t), \hspace{0.5mm} y(t), \hspace{0.5mm} z(t))$ parameterizes the curve $C$, and
@@ -37,24 +37,24 @@ Similar to line integrals, surface integrals can be defined over scalar function
 ## Volume Integrals
 Volume integrals are typically defined over a scalar function $f(x, y, z)$ in a region $V$:
 
-$$\iiint_V f dV,$$ where
-- $dV$ is the volume element (e.g., $dx \, dy \, dz$ in Cartesian coordinates).
+$$ \iiint_V f dV $$ 
+where
+
+- $dV$ is the volume element (e.g., $dx, \hspace{0.5mm} dy, \hspace{0.5mm} dz$ in Cartesian coordinates).
 
 ### Why a scalar function?
   - Volume integrals are often used to compute aggregate quantities like total mass, charge, or energy within a 3D region. These quantities are inherently scalar, as they represent a total amount without directional dependence. 
   - The volume element $dV$ is a scalar, and integrating a scalar function over a volume naturally yields a scalar result, which aligns with the physical interpretation of summing up a quantity over a region. 
   - For example, if $f(x, y, z)$ is the density of an object, $\iiint_V f \, dV$ gives the total mass.
 
-<br/>
 
-- Can volume integrals involve vector functions?
+### Can volume integrals involve vector functions?
   - While less common, volume integrals can be defined over vector fields in specific contexts. For instance, you might integrate each component of a vector field $\mathbf{F} = (P, Q, R)$ separately over a volume:
   $$\iiint_V \mathbf{F} \, dV = \left( \iiint_V P \, dV, \iiint_V Q \, dV, \iiint_V R \, dV \right).$$
   - This results in a vector, where each component is a scalar volume integral. Such integrals are used in applications like computing the total momentum of a fluid (where $\mathbf{F}$ is the momentum density). However, this is less common than scalar volume integrals because physical quantities integrated over a volume are often scalar (e.g., mass, energy), and vector volume integrals don’t have a direct geometric interpretation like flux or work.
 
 <br/>
 
----
 
 #### Going deeper into **Surface Integrals**:
 
