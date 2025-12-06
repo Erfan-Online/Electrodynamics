@@ -1,34 +1,46 @@
 ## Line Integrals
-Line integrals are typically defined over a vector field $\mathbf{F}(x, y, z) = (P, Q, R)$ along a curve $C$. The standard form of a line integral is:
-$$\int_C \mathbf{F} \cdot d\mathbf{r} = \int_C (P.dx + Q.dy + R.dz),$$
-where $\mathbf{r}(t) = (x(t), y(t), z(t))$ parameterizes the curve $C$, and $d\mathbf{r} = (dx, dy, dz)$ is the differential tangent vector along the curve.
+Line integrals are typically defined over a vector field $\mathbf{F}(x, y, z) = (P, Q, R)$ along a curve $C$. 
 
-- Why a vector function? 
-  - The vector field $\mathbf{F}$ represents a quantity with both _magnitude_ **and** _direction_ (e.g., force, velocity, or electric field) at each point in space. The line integral measures how much the vector field aligns with the direction of the curve $C$.  
+
+The standard form of a line integral is: \
+$$\int_C \mathbf{F} \cdot d\mathbf{r} = \int_C (P.dx + Q.dy + R.dz),$$ 
+
+where 
+- $\mathbf{r}(t) = (x(t), y(t), z(t))$ parameterizes the curve $C$, and
+- $d\mathbf{r} = (dx, dy, dz)$ is the differential tangent vector along the curve.
+
+
+### Why a vector function? 
+The vector field $\mathbf{F}$ represents a quantity with both _magnitude_ **and** _direction_ (e.g., force, velocity, or electric field) at each point in space. The line integral measures how much the vector field aligns with the direction of the curve $C$.  
   - For example, in physics, this often corresponds to work done by a force field along a path, where the dot product $\mathbf{F} \cdot d\mathbf{r}$ picks out the component of $\mathbf{F}$ parallel to the curve’s tangent vector. 
 
 
-- Scalar line integrals exist too.
+### Scalar line integrals exist too.
 It’s worth noting that line integrals can also be defined over scalar functions, e.g., $\int_C f \, ds$, where $f(x, y, z)$ is a scalar field (like temperature or density), and $ds$ is the arc length element. This measures the accumulation of the scalar quantity along the curve’s length.
 
 ## Surface Integrals
 
 Surface integrals over vector fields are typically of the form:
+
 $$\iint_S \mathbf{F} \cdot d\mathbf{A} = \iint_S \mathbf{F} \cdot \mathbf{n} \times dA,$$
-where $\mathbf{F}$ is a vector field, $\mathbf{n}$ is the unit normal vector to the surface $S$, and $d\mathbf{A} = \mathbf{n} \, dA$ is the vector area element.
+where 
+- $\mathbf{F}$ is a vector field,
+- $\mathbf{n}$ is the unit normal vector to the surface $S$, and
+- $d\mathbf{A} = \mathbf{n} \times dA$ is the vector area element.
 
-- Why a vector function?
-  - Surface integrals over vector fields are often used to compute flux—the amount of a vector field (e.g., fluid flow, magnetic field) passing **through** a surface. The dot product $\mathbf{F} \cdot \mathbf{n}$ measures the component of the vector field **perpendicular** to the surface, which is relevant for flux calculations.
+### Why a vector function?
+Surface integrals over vector fields are often used to compute flux—the amount of a vector field (e.g., fluid flow, magnetic field) passing **through** a surface. The dot product $\mathbf{F} \cdot \mathbf{n}$ measures the component of the vector field **perpendicular** to the surface, which is relevant for flux calculations.
 
-- Scalar surface integrals exist too.
+### Scalar surface integrals exist too.
 Similar to line integrals, surface integrals can be defined over scalar functions, e.g., $\iint_S f \, dA$, where $f$ is a scalar field, and $dA$ is the scalar area element. This computes the total scalar quantity (e.g., mass or charge) over the surface area. 
 
 ## Volume Integrals
 Volume integrals are typically defined over a scalar function $f(x, y, z)$ in a region $V$:
-$$\iiint_V f \, dV,$$
-where $dV$ is the volume element (e.g., $dx \, dy \, dz$ in Cartesian coordinates).
 
-- Why a scalar function?
+$$\iiint_V f dV,$$ where
+- $dV$ is the volume element (e.g., $dx \, dy \, dz$ in Cartesian coordinates).
+
+### Why a scalar function?
   - Volume integrals are often used to compute aggregate quantities like total mass, charge, or energy within a 3D region. These quantities are inherently scalar, as they represent a total amount without directional dependence. 
   - The volume element $dV$ is a scalar, and integrating a scalar function over a volume naturally yields a scalar result, which aligns with the physical interpretation of summing up a quantity over a region. 
   - For example, if $f(x, y, z)$ is the density of an object, $\iiint_V f \, dV$ gives the total mass.
