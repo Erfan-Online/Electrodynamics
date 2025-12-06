@@ -9,7 +9,6 @@ where
 - $\mathbf{r}(t) = (x(t), \hspace{0.5mm} y(t), \hspace{0.5mm} z(t))$ parameterizes the curve $C$, and
 - $d\mathbf{r} = (dx, \hspace{0.5mm} dy, \hspace{0.5mm} dz)$ is the differential tangent vector along the curve.
 
-
 ### Why a vector function? 
 The vector field $\mathbf{F}$ represents a quantity with both _magnitude_ **and** _direction_ (e.g., force, velocity, or electric field) at each point in space. The line integral measures how much the vector field aligns with the direction of the curve $C$.  
   - For example, in physics, this often corresponds to work done by a force field along a path, where the dot product $\mathbf{F} \cdot d\mathbf{r}$ picks out the component of $\mathbf{F}$ parallel to the curve’s tangent vector. 
@@ -40,7 +39,7 @@ Volume integrals are typically defined over a scalar function $f(x, y, z)$ in a 
 $$ \iiint_V f dV $$ 
 where
 
-- $dV$ is the volume element (e.g., $dx, \hspace{0.5mm} dy, \hspace{0.5mm} dz$ in Cartesian coordinates).
+- $dV$ is the volume element (e.g., $dV = (dx, \hspace{0.5mm} dy, \hspace{0.5mm} dz)$ in Cartesian coordinates).
 
 ### Why a scalar function?
   - Volume integrals are often used to compute aggregate quantities like total mass, charge, or energy within a 3D region. These quantities are inherently scalar, as they represent a total amount without directional dependence. 
