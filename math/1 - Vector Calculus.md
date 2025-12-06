@@ -3,11 +3,11 @@ Line integrals are typically defined over a vector field $\mathbf{F}(x, y, z) = 
 
 
 The standard form of a line integral is: \
-$$\int_C \mathbf{F} \cdot d\mathbf{r} = \int_C (P.dx + Q.dy + R.dz),$$ 
+$$\int_C \mathbf{F} \cdot d\mathbf{r} = \int_C (P \cdot dx + Q \cdot dy + R \cdot dz),$$ 
 
 where 
-- $\mathbf{r}(t) = (x(t), y(t), z(t))$ parameterizes the curve $C$, and
-- $d\mathbf{r} = (dx, dy, dz)$ is the differential tangent vector along the curve.
+- $\mathbf{r}(t) = (x(t), \hspace{0.5mm} y(t), \hspace{0.5mm} z(t))$ parameterizes the curve $C$, and
+- $d\mathbf{r} = (dx, \hspace{0.5mm} dy, \hspace{0.5mm} dz)$ is the differential tangent vector along the curve.
 
 
 ### Why a vector function? 
